@@ -6,7 +6,7 @@ const GAME_CONFIG = {
   shrinkPerHit: 4,
   explosionGrowSpeed: 8,
   explosionScale: 2.8,
-  accent: [255, 255, 255]
+  accent: [20, 255, 60]
 };
 
 let ballx, bally;
@@ -76,7 +76,7 @@ function updateBall() {
 function drawBall() {
   noStroke();
   if (colorInverted) fill(...GAME_CONFIG.accent);
-  else fill(255,0,0);
+  else fill(255);
   circle(ballx, bally, ballDiameter);
 }
 
@@ -154,7 +154,7 @@ function drawHUD() {
   fill(fg);
   textSize(18);
   text('Hits: ' + score, 20, 20);
-  text('Timessss: ' + timeLeft, 20, 45);
+  text('Time: ' + timeLeft, 20, 45);
   text('Level: Easy', 20, 70);
   text('Speed: ' + nf(sqrt(vx * vx + vy * vy), 1, 2), 20, 95);
   text('Ball Size: ' + int(ballDiameter), 20, 120);
