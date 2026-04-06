@@ -76,7 +76,7 @@ function updateBall() {
 function drawBall() {
   noStroke();
   if (colorInverted) fill(...GAME_CONFIG.accent);
-  else fill(255);
+  else fill(255,0,0);
   circle(ballx, bally, ballDiameter);
 }
 
