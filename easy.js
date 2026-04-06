@@ -6,7 +6,7 @@ const GAME_CONFIG = {
   shrinkPerHit: 4,
   explosionGrowSpeed: 8,
   explosionScale: 2.8,
-  accent: [0, 255, 0]
+  accent: [255, 255, 255]
 };
 
 let ballx, bally;
